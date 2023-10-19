@@ -1,0 +1,267 @@
+/*Обнуление*/
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  /*border: 1px solid red;*/
+}
+
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  box-sizing: border-box;
+}
+
+:focus,:active {
+  outline: none;
+}
+
+a:focus,a:active {
+  outline: none;
+}
+
+nav,footer,header,aside {
+  display: block;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+
+html, body { 
+  font-family: "Roboto", "Arial", sans-serif; 
+  letter-spacing: -0.5px;
+  color: var(--page-text-color);
+}
+
+/* CONTAINER */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+/* NAV */
+.nav {
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  letter-spacing: normal;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin-right: auto;
+  color: white;
+  font-size: 25px;
+}
+
+.logo:hover {
+  color: grey;
+  transition: color 0.3s ease 0s;
+}
+
+.logo strong {
+  font-weight: bold;
+}
+
+.nav-row__img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-list__link {
+  color: white;
+}
+
+.nav-list__link:hover {
+  color: grey;
+  transition: color 0.3s ease 0s;
+}
+
+/* BTN */
+.btn {
+  display: inline-block;
+  padding: 20px 35px;
+  margin-left: 25px;
+  background-color: #FF7143;
+  color: black;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:active {
+  position: relative;
+  top: 2px;
+}
+
+/* TITLE */
+.title-1 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.title-2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  line-height: 28px;
+}
+
+/* HEADER */
+.header {
+  padding: 40px 0;
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF7143;
+  color: black;
+  text-align: center; 
+}
+
+.header__wrapper {
+  padding: 0 15px;
+  max-width: 660px;
+}
+
+.header__title {
+  margin-bottom: 15px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.header__text {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.333;
+  color: var(--white);
+}
+
+.header-btn__black {
+  display: inline-block;
+  padding: 20px 35px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.2s ease-in;
+}
+
+.header-btn__black:active {
+  position: relative;
+  top: 2px;
+}
+
+/* MAIN */
+.main {
+  padding: 70px 0;
+  background-color: white;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.project {
+  margin-bottom: 60px;
+  max-width: 370px;
+  background-color: white;
+  box-shadow: 0px 5px 30px rgba(255, 133, 67);
+  border-radius: 10px;
+}
+
+.project__img {
+  border-radius: 10px;
+  background-color: white;
+}
+
+/* FOOTER */
+.footer {
+  padding: 60px 0 50px;
+  background-color: black;
+  color: white;
+}
+
+.footer__info {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.footer__btn {
+  display: inline-block;
+  padding: 20px 35px;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.2s ease-in;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 70px;
+}
